@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "floors-list":"../../components/floors-list/floors-list"
+  }
+}

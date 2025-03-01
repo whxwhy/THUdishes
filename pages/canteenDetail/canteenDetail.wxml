@@ -1,0 +1,3 @@
+<!--pages/canteenDetail/canteenDetail.wxml-->
+<text>pages/canteenDetail/canteenDetail.wxml</text>
+<floors-list></floors-list>

@@ -1,0 +1,25 @@
+<view class="list">
+  <view class="dish">
+    <navigator url="/pages/details/details">
+     <view class="dish_img">
+        <image src="https://ts4.cn.mm.bing.net/th?id=OSK.3c55ecd30b6fa085337cc8978bcef846&w=184&h=137&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1">
+        </image>
+     </view>
+     <view class="dish_info">
+        <text class="dish_name">dapaozhu</text>
+        <text class="dish_grade">5.0</text>
+        <text class="dish_price">13.5</text>元
+     </view>
+    </navigator>    
+  </view>
+  <view class="item">
+    <view class="goods_img">
+      <image  src="https://ts4.cn.mm.bing.net/th?id=OSK.3c55ecd30b6fa085337cc8978bcef846&w=184&h=137&rs=2&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1"></image>
+    </view>
+    <view class="goods_info">
+      <text class="goods_name">dapaozhu</text>
+      <text class="goods_grade">5.0</text>
+      <text class="goods_price">13.5</text>元
+    </view>
+  </view>
+</view>

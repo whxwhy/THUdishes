@@ -1,1 +1,22 @@
 /* pages/canteenDetail/canteenDetail.wxss */
+page{
+  height:100%;
+}
+
+.cates{
+    display: flex;
+    flex-direction:row;
+    
+  }
+  .cates .left{
+    flex:2;
+    display: flex;    flex-direction: column;
+    background-color: #f7f4fa;   color: #9b6dca;
+    height:100vh;
+    align-items: center;
+    padding:10px 0;
+  }
+  .cates .right{
+    flex:5;
+  }
+  

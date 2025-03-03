@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "floors-list":"../../components/floors-list/floors-list"
+    "floors-list":"../../components/floors-list/floors-list",
+    "windows-list":"../../components/windows-list/windows-list"
   }
 }

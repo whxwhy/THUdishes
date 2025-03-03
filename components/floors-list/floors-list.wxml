@@ -1,6 +1,4 @@
-<navigator url="/pages/floorDetail/floorDetail">
-<view>f1</view>
-</navigator>
-<navigator url="/pages/floorDetail/floorDetail">
-<view>f2</view>
-</navigator>
+
+<view class="floor">f1</view>
+
+<view class="floor">f2</view>

@@ -1,1 +1,42 @@
 /* components/dishes-list/dishes-list.wxss */
+.content{
+  margin-bottom: 20rpx;
+  background:whitesmoke;
+  display: flex;
+  padding:20rpx;
+  margin-top: 20rpx;
+  flex-direction: row;
+}
+.dish_img  image{
+flex:1;
+width: 220rpx;
+height: 220rpx;
+border-radius: 16rpx;
+}
+.dish_info{
+  flex:1;
+  padding-left: 20rpx;
+
+
+}
+.dish_info .dish_name{
+  font-size: 40rpx;
+  color:black;
+  margin-bottom: 10rpx;
+}
+.dish-detail{
+  display: flex;
+  position:absolute;
+  bottom:10rpx;
+}
+.dish_detail .dish_grade{
+  color:red;
+  font-size: 40rpx;
+}
+.dish_detail .dish_price{
+  color:#660874;
+  font-size: 40rpx;
+  padding-top:50rpx;
+  float: right;
+  margin-right:30rpx;
+}

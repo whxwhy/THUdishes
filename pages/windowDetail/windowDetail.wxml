@@ -1,3 +1,8 @@
 <!--pages/windowDetail/windowDetail.wxml-->
 <text>pages/windowDetail/windowDetail.wxml</text>
+<view class="intro">
+  <image src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
+        </image>
+  <text>Thai</text>
+</view>
 <dishes-list></dishes-list>

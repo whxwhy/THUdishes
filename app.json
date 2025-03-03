@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/floorDetail/floorDetail",
     "pages/windowDetail/windowDetail",
     "pages/canteenDetail/canteenDetail",
     "pages/details/details"
@@ -9,9 +8,10 @@
   
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarBackgroundColor": "#660874"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

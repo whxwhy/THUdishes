@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/windowDetail/windowDetail",
     "pages/canteenDetail/canteenDetail",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/turntable/turntable"
    
   
   ],
@@ -16,5 +17,23 @@
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#660874",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"/images/icons8-adventure-48.png",
+      "selectedIconPath": "/images/icons8-adventure-48-selected.png",
+      "text": "食堂地图"
+    },{
+      "pagePath": "pages/turntable/turntable",
+      "iconPath":"/images/icons8-lottery-50.png",
+      "selectedIconPath": "/images/icons8-lottery-50-selected.png",
+      "text": "美食转盘"
+    }]
+  }
 }
+
+

@@ -1,11 +1,17 @@
-<!--pages/canteenDetail/canteenDetail.wxml-->
+ <!--pages/canteenDetail/canteenDetail.wxml-->
 
+<view class="intro">
+<image mode="aspectFill" src="https://yourschool.cc/thubook/assets/shit_5-D3CKZl2k.png"></image>
+<view class="cat_name">听涛园</view>
+<view mode="aspectFill" class="cat_loc"><image src="https://img.icons8.com/?size=100&id=86478&format=png&color=000000"><navigator></navigator></image>
+<text>学堂路的一个路口旁至于具体在哪其实我懒得查</text></view>
 
+</view>
   <view class="cates">
-    <view class="left">
+    <view  class="left">
       <floors-list></floors-list>
     </view>
-    <scroll-view scroll-y class="right">
+    <scroll-view scroll-y  class="right">
       <windows-list></windows-list>
     </scroll-view>
   </view>

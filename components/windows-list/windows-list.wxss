@@ -1,1 +1,68 @@
 /* components/windows-list/windows-list.wxss */
+.window{
+    background-color: white;
+    padding-bottom: 3px;
+    border-radius: 16px;
+    margin: 5px 0;
+}
+.window_info{
+  display: flex;
+ align-items: center;
+  padding-top: 10px;
+}
+.window_name{
+  font-size: 32rpx;
+  font-weight: normal;
+  color:black;
+ padding-left: 15px;
+ padding-right: 3px;
+}
+.window_type{
+  background-color:rgb(154,107,203);
+  color: white;
+  font-weight: 340;
+  font-size: 24rpx;
+  text-align: center;
+ line-height: 18px;
+  width:18px;
+  height:18px;
+  border-radius: 30%;
+  margin:0 2px;
+}
+.window_loc{
+color:#555555;
+font-size: 28rpx;
+margin-left: auto;
+padding-right: 10px;
+}
+.img{
+  display:flex;
+flex-direction: row;  padding: 5px 10px;
+
+}
+.window_img{
+  justify-content: center;
+}
+.window_img image{
+  width: 166px;
+  height: 124.5px;
+  margin-right: 4.5px;
+  border-radius: 16px 0 0 16px;
+
+}
+.dish_img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height:124.5px;
+  width: 124.5px;
+  border-radius: 0 16px 16px 0;
+  overflow: hidden;
+}
+.imgd{
+box-sizing: border-box;
+width: 60px;
+height: 60px;
+}

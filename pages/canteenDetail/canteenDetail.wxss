@@ -1,22 +1,49 @@
 /* pages/canteenDetail/canteenDetail.wxss */
-page{
-  height:100%;
-}
 
+.intro image{
+width: 400px;
+height:120px;
+}
+.cat_name{
+  font-size: 40rpx;
+  font-weight: bolder;
+  padding: 3px 15px;
+}
+.cat_loc{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 10px;
+  padding-top: 5px;
+  font-size: 28rpx;
+  color: #555555;
+}
+.cat_loc image{
+  width:20px;
+  height: 20px;
+  margin-right: 5px;
+}
 .cates{
-    display: flex;
+position: absolute;
+top:25%;
+bottom:0px;
+   display: flex;
     flex-direction:row;
-    
+
+
   }
   .cates .left{
     flex:2;
-    display: flex;    flex-direction: column;
-    background-color: #f7f4fa;   color: #9b6dca;
-    height:100vh;
+    width:10vh;
+    font-weight: bolder;
+    background-color: rgb(243,237,250);   color: #3e1844;
+    bottom:0;
     align-items: center;
     padding:10px 0;
   }
   .cates .right{
     flex:5;
+    bottom:0;
+    background-color:rgb(243,237,250) ;
   }
   

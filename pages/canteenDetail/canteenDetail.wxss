@@ -1,5 +1,12 @@
 /* pages/canteenDetail/canteenDetail.wxss */
-
+page{
+  background-color: rgb(243,237,250);
+}
+.intro{
+  border-radius: 0 0 16px 16px;
+  padding-bottom: 10px;
+  background-color: white;
+}
 .intro image{
 width: 400px;
 height:120px;
@@ -36,7 +43,7 @@ bottom:0px;
     flex:2;
     width:10vh;
     font-weight: bolder;
-    background-color: rgb(243,237,250);   color: #3e1844;
+    color: #3e1844;
     bottom:0;
     align-items: center;
     padding:10px 0;
@@ -44,6 +51,6 @@ bottom:0px;
   .cates .right{
     flex:5;
     bottom:0;
-    background-color:rgb(243,237,250) ;
+    
   }
   

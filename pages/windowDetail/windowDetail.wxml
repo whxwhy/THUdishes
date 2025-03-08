@@ -1,8 +1,26 @@
 <!--pages/windowDetail/windowDetail.wxml-->
-<text>pages/windowDetail/windowDetail.wxml</text>
+
 <view class="intro">
-  <image src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-  <text>Thai</text>
+
+<view class="window_intro">
+<view>
+  <view class="window_name">打抛猪窗口</view>
+  <view class="type_box"> 
+    <view class="window_type">酸</view>
+   <view class="window_type">辣</view>
+  </view>
 </view>
-<dishes-list></dishes-list>
+
+<view class="window_loc">
+<image mode="aspectFill" src="https://img.icons8.com/?size=100&id=86478&format=png&color=000000">
+<navigator></navigator>
+</image>
+<text>听涛-1层-最右侧占位符占位符</text>
+</view>
+
+</view>
+ 
+  <view class="window_pic"><image mode="aspectFill"  src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
+        </image></view>
+</view>
+<scroll-view scroll-y class="dishes"><dishes-list></dishes-list></scroll-view>

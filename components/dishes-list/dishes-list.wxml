@@ -67,4 +67,21 @@
      </view></view>
     </navigator>    
   </view>
+  <view class="dish">
+    <navigator url="/pages/details/details">
+    <view class="content">
+     <view class="dish_img" >
+        <image mode="aspectFill" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
+        </image>
+     </view>
+     <view class="dish_info">
+        <view class="dish_name">打抛猪</view>
+        <view class="dish_detail">
+          <view class="dish_grade">5.0</view>
+          <view class="dish_price">13.5元</view>
+        </view>
+        
+     </view></view>
+    </navigator>    
+  </view>
 </view>

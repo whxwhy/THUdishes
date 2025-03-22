@@ -5,15 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    windowData:{},
+dishData:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  onLoad(options){
+    console.log(options.id);
+    wx.cloud.database().collection("windows-list")
+    .doc(options.id)
+    .get()
+    .then((res) => {
+      console.log('success=window',res);
+      this.setData({
+         windowData:res.data,
+     });
+     //this.setData({
+       const windowA=res.data;
+    // });
+     return wx.cloud.database().collection("dishData")
+    .where({
+      window: windowA.name
+   })
+    .get()
+    }).then((res) => {
+      console.log('success',res.data);
+     this.setData({
+       dishData:res.data
+     });
+    
+    
+    });
+    
+   },
 
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

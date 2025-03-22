@@ -5,15 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    canteenData:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
-  },
+  onLoad(){
+    wx.cloud.database().collection("canteenData")
+    .get()
+    .then((res) => {
+      console.log('success',res);
+     this.setData({
+       canteenData:res.data
+     })
+    });},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -64,3 +70,4 @@ Page({
 
   }
 })
+

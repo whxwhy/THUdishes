@@ -1,15 +1,11 @@
-// components/dishes-list/dishes-list.js
+// components/canteens-list/canteens-list.js
 Component({
 
   /**
    * 组件的属性列表
    */
   properties: {
-    dishData:{
-      type:Array,
-      value:[]
-    }
-  
+
   },
 
   /**

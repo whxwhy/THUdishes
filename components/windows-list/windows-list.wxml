@@ -1,11 +1,11 @@
 <view class="list">
-  <view class="window">
-    <navigator url="/pages/windowDetail/windowDetail">     
+  <view class="window" wx:for="{{windowData}}" wx:key="index">
+    <navigator url="/pages/windowDetail/windowDetail?id={{item._id}}">     
     <view class="window_info">
-        <view class="window_name">打抛猪窗口</view>
-        <view class="window_type">酸</view>
-        <view class="window_type">辣</view>
-        <view class="window_loc">听涛-1层-最右侧</view>
+        <view class="window_name">{{ item.name }}</view>
+        <view class="window_type">{{ item.type }}</view>
+        <view class="window_type">{{ item.type }}</view>
+        <view class="window_loc">{{ item.loc }}</view>
      </view>
      <view class="img">
      <view  class="window_img">
@@ -26,110 +26,5 @@
     </view>
     </navigator>    
   </view>
-  <view class="window">
-    <navigator url="/pages/windowDetail/windowDetail">     
-    <view class="window_info">
-        <view class="window_name">打抛猪窗口</view>
-        <view class="window_type">酸</view>
-        <view class="window_type">辣</view>
-        <view class="window_loc">听涛-1层-最右侧</view>
-     </view>
-     <view class="img">
-     <view  class="window_img">
-        <image mode="aspectFill" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-     </view>
-     
-     <view class="dish_img">
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain" >
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-     </view>
-    </view>
-    </navigator>    
-  </view>
-  <view class="window">
-    <navigator url="/pages/windowDetail/windowDetail">     
-    <view class="window_info">
-        <view class="window_name">打抛猪窗口</view>
-        <view class="window_type">酸</view>
-        <view class="window_type">辣</view>
-        <view class="window_loc">听涛-1层-最右侧</view>
-     </view>
-     <view class="img">
-     <view  class="window_img">
-        <image mode="aspectFill" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-     </view>
-     
-     <view class="dish_img">
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain" >
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-     </view>
-    </view>
-    </navigator>    
-  </view>  <view class="window">
-    <navigator url="/pages/windowDetail/windowDetail">     
-    <view class="window_info">
-        <view class="window_name">打抛猪窗口</view>
-        <view class="window_type">酸</view>
-        <view class="window_type">辣</view>
-        <view class="window_loc">听涛-1层-最右侧</view>
-     </view>
-     <view class="img">
-     <view  class="window_img">
-        <image mode="aspectFill" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-     </view>
-     
-     <view class="dish_img">
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain" >
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-     </view>
-    </view>
-    </navigator>    
-  </view>  <view class="window">
-    <navigator url="/pages/windowDetail/windowDetail">     
-    <view class="window_info">
-        <view class="window_name">打抛猪窗口</view>
-        <view class="window_type">酸</view>
-        <view class="window_type">辣</view>
-        <view class="window_loc">听涛-1层-最右侧</view>
-     </view>
-     <view class="img">
-     <view  class="window_img">
-        <image mode="aspectFill" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-     </view>
-     
-     <view class="dish_img">
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain" >
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-     </view>
-    </view>
-    </navigator>    
-  </view>
+  
 </view>

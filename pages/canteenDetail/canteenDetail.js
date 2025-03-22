@@ -5,15 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    canteenData:{},
+windowData:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
-  },
+  onLoad(options){
+    console.log(options.id);
+    wx.cloud.database().collection("canteenData")
+    .doc(options.id)
+    .get()
+    .then((res) => {
+      console.log('success=canteen',res);
+      this.setData({
+         canteenData:res.data,
+     });
+     //this.setData({
+       const canteenA=res.data;
+    // });
+     return wx.cloud.database().collection("windows-list")
+    .where({
+      canteen: canteenA.name,
+   })
+    .get()
+    }).then((res) => {
+      console.log('success',res.data);
+     this.setData({
+       windowData:res.data
+     });
+    
+    
+    });
+    
+   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -62,5 +88,8 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+ clickFloorNav(e){
+ 
   }
 })

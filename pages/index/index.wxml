@@ -1,3 +1,3 @@
 <!--pages/index.wxml-->
 <text>pages/index.wxml</text>
-<navigator url="/pages/canteenDetail/canteenDetail"><view>tingtao</view></navigator>
+<view class="canteen" wx:for="{{canteenData}}" wx:key="index"><navigator url="/pages/canteenDetail/canteenDetail?id={{item._id}}"><view>{{item.name}}</view></navigator></view>

@@ -48,6 +48,11 @@ bottom:0px;
     align-items: center;
     padding:10px 0;
   }
+  .floor{
+    padding:10px 0;
+    font-size: 32rpx;
+    text-align: center;
+  }
   .cates .right{
     flex:5;
     bottom:0;

@@ -1,18 +1,22 @@
  <!--pages/canteenDetail/canteenDetail.wxml-->
 
 <view class="intro">
-<image mode="aspectFill" src="https://yourschool.cc/thubook/assets/shit_5-D3CKZl2k.png"></image>
-<view class="cat_name">听涛园</view>
+<image mode="aspectFill" src="{{canteenData.pic}}"></image>
+<view class="cat_name">{{canteenData.name}}</view>
 <view  class="cat_loc"><image mode="aspectFill" src="https://img.icons8.com/?size=100&id=86478&format=png&color=000000"><navigator></navigator></image>
-<text>学堂路的一个路口旁至于具体在哪其实我懒得查</text></view>
+<text>{{canteenData.loc}}</text></view>
 
 </view>
   <view class="cates">
     <view  class="left">
-      <floors-list></floors-list>
+  
+  
+<view data-floor="1" bindtap="clickFloorNav" class="floor">一层</view>
+
+<view data-floor="2" bindtap="clickFloorNav" class="floor">二层</view>
     </view>
     <scroll-view scroll-y  class="right">
-      <windows-list></windows-list>
+      <windows-list windowData="{{windowData}}"></windows-list>
     </scroll-view>
   </view>
 

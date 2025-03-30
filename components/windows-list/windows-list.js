@@ -10,25 +10,35 @@ Component({
    windowData:{
      type:Array,
      value:[]
-   }
+   },
+  
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-  
+   
   },
-  // observers: {
-   // 'dynamicX': function(x) {
-   //   this.queryData(x);  // 当参数变化时自动查询
-   // }
-  //},
   
   /**
    * 组件的方法列表
    */
+  /**lifetimes:{
+attached:function(){
+  catname=item.name
+  wx.cloud.database().collection("dishData")
+    .where({
+      window: catname,
+   })
+    .get()
+    .then((res) => {
+      console.log('success',res.data);
+     this.setData({
+       dishData:res.data
+     });
+});
+  },}, */
   methods: {
-
-  }
+  },
 })

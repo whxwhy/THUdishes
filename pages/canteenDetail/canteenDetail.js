@@ -34,12 +34,36 @@ windowData:[],
       console.log('success',res.data);
      this.setData({
        windowData:res.data
-     });
+     }, () => {
+      this.fetchRelatedDishData();});
     
     
     });
     
    },
+   fetchRelatedDishData: function () {
+    const db = wx.cloud.database();
+    const updates = this.data.windowData.map(item => {
+      return db.collection('dishData') // 替换为实际的集合名称
+        .where({ window: item.name })
+        .get()
+        .then(res => {
+          // 假设返回的数据结构是数组，取第一个元素或根据需要处理
+          console.log('success',res);
+          item.dishData = res.data;
+        });
+    });
+
+    Promise.all(updates).then(() => {
+      this.setData({
+        windowData: this.data.windowData,
+       
+      });
+    }).catch(err => {
+      console.error('获取相关菜品数据失败:', err); 
+    });
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

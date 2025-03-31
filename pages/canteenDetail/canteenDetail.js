@@ -6,7 +6,10 @@ Page({
    */
   data: {
     canteenData:{},
-windowData:[],
+    windowData:[],
+    floorData:[
+      {text:"一 层"},{text:"二 层"},{text:"三 层"},{text:"四 层"}
+    ]
   },
 
   /**

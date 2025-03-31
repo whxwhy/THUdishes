@@ -6,25 +6,12 @@
         <view class="window_type" wx:if="{{item.type}}">{{ item.type }}</view>
         <view class="window_loc">{{ item.loc }}</view>
      </view>
-      
-     <view class="img"><scroll-view scroll-x class="winCan"><view class="window" 
-      wx:for="{{item.dishData}}" wx:key="index">{{item.name}}
-      </view></scroll-view>
-     <view  class="window_img">
-        <image mode="aspectFill" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image>
-     </view>
-     <view class="dish_img">
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain" >
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-        <image mode="aspectFill" class="imgd" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
-     </view>
-    </view>
+     <scroll-view scroll-x><view  class="dish"><view class="dishitem"   wx:for="{{item.dishData}}" wx:key="index">
+     <view class="dot">|</view>
+     <view>{{item.name}}</view>
+     <view class="price">{{item.price}}元</view>
+      </view></view></scroll-view>
+     
     </navigator>    
   </view>
   

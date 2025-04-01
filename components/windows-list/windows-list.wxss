@@ -39,9 +39,9 @@ padding-right: 10px;
 .dish{
   display:flex;
   flex-direction: column; 
-  padding: 10px 10px;
+  padding:  5px 10px  10px 10px;
   flex-wrap: wrap;
-  height:120px;
+  height:105 px;
 }
 .dishitem{
   height:33.33%;

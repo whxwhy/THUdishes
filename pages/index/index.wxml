@@ -1,4 +1,5 @@
 <!--pages/index.wxml-->
+<view><search></search></view>
 <view class='view'>
   <map id="myMap"longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" covers="{{covers}}" bindmarkertap="toDetail" show-location><cover-view class="viewlistd"  bindtap="moveTolocation">
   <cover-image src="https://img.icons8.com/?size=100&id=egQDDuWhdc9m&format=png&color=000000" style="width:45px;height:45px"></cover-image>

@@ -1,0 +1,23 @@
+/* components/search/search.wxss */
+.search{
+  height: 90rpx;
+  
+  padding:10rpx;
+  background-color: #660874;
+}
+.container{
+  border-radius: 35rpx;
+  height: 70rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #666666;
+
+}
+.container image{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+
+}

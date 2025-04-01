@@ -1,8 +1,9 @@
 <!--pages/index.wxml-->
-<text>pages/index.wxml</text>
-<view class="canteen" wx:for="{{canteenData}}" wx:key="index"><navigator url="/pages/canteenDetail/canteenDetail?id={{item._id}}"><view>{{item.name}}</view></navigator></view>
 <view class='view'>
-  <map longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" covers="{{covers}}" show-location>
+  <map id="myMap"longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" covers="{{covers}}" bindmarkertap="toDetail" show-location><cover-view class="viewlistd"  bindtap="moveTolocation">
+  <cover-image src="https://img.icons8.com/?size=100&id=egQDDuWhdc9m&format=png&color=000000" style="width:45px;height:45px"></cover-image>
+  </cover-view>
   </map>
 </view>
+
 

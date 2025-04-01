@@ -1,6 +1,0 @@
-/* components/floors-list/floors-list.wxss */
-.floor{
-  padding:10px 0;
-  font-size: 32rpx;
-  text-align: center;
-}

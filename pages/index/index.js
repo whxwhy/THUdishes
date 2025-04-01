@@ -6,6 +6,8 @@ Page({
    */
   data: {
     canteenData:[],
+    longitude:116.326836,latitude:40.00135,scale:15,
+    markers:[{id:0,longitude:116.326836,latitude:40.00366,width:30,height:30,callout:{content:"wwwww",display:'ALWAYS'}}]
   },
 
   /**
@@ -19,7 +21,19 @@ Page({
      this.setData({
        canteenData:res.data
      })
-    });},
+    });/**wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success (res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        wx.openLocation({
+          latitude,
+          longitude,
+          scale: 18
+        })
+      }
+     })*/},
+    
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -68,6 +82,7 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+  
 })
 

@@ -1,3 +1,8 @@
 <!--pages/index.wxml-->
 <text>pages/index.wxml</text>
 <view class="canteen" wx:for="{{canteenData}}" wx:key="index"><navigator url="/pages/canteenDetail/canteenDetail?id={{item._id}}"><view>{{item.name}}</view></navigator></view>
+<view class='view'>
+  <map longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" covers="{{covers}}" show-location>
+  </map>
+</view>
+

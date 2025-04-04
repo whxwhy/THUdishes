@@ -1,34 +1,13 @@
-// pages/searchpage/searchpage.js
+// pages/user/user.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+
   },
-  handleInput(e){
-    console.log(e);
-    const{value}=e.detail;
-    if(!value.trim()){
-      return;
-    }
-    else{}
-  },
-  /**wx.cloud.database().collection("dishData")
-  .where({
-    window: windowA.name
- })
-  .get()
-  }).then((res) => {
-    console.log('success',res.data);
-   this.setData({
-     dishData:res.data
-   });
-  
-  
-  });*/
-  
+
   /**
    * 生命周期函数--监听页面加载
    */

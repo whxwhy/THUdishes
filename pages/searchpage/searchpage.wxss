@@ -1,1 +1,21 @@
 /* pages/searchpage/searchpage.wxss */
+.search1{
+  height: 90rpx;
+  padding:10rpx;
+  background-color: #660874;
+}
+
+.container1{
+  border-radius: 35rpx;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #666666;
+}
+.container1 image{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}

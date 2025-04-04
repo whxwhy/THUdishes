@@ -5,7 +5,8 @@
     "pages/canteenDetail/canteenDetail",
     "pages/details/details",
     "pages/searchpage/searchpage",
-    "pages/turntable/turntable"
+    "pages/turntable/turntable",
+    "pages/user/user"
    
   
   ],
@@ -33,6 +34,11 @@
       "iconPath":"/images/icons8-lottery-50.png",
       "selectedIconPath": "/images/icons8-lottery-50-selected.png",
       "text": "美食转盘"
+    },{
+      "pagePath": "pages/user/user",
+      "iconPath":"/images/icons8-user-96.png",
+      "selectedIconPath": "/images/icons8-user-96-selected.png",
+      "text": "我的"
     }]
   },"permission": {
     "scope.userLocation": {

@@ -1,5 +1,5 @@
  <!--pages/canteenDetail/canteenDetail.wxml-->
-
+ <view><search></search></view>
 <view class="intro">
 <image mode="aspectFill" src="{{canteenData.pic}}"></image>
 <view class="cat_name">{{canteenData.name}}</view>

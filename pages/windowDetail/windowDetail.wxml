@@ -1,13 +1,12 @@
 <!--pages/windowDetail/windowDetail.wxml-->
-
+<view><search></search></view>
 <view class="intro">
 
 <view class="window_intro">
 <view>
   <view class="window_name">{{windowData.name}}</view>
   <view class="type_box"> 
-    <view class="window_type">{{windowData.type}}</view>
-   <view class="window_type">{{windowData.type}}</view>
+    <view class="window_type"wx:if="{{windowData.type}}">{{windowData.type}}</view>
   </view>
 </view>
 

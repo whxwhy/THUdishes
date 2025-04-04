@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    
+    "search":"../../components/search/search",
     "dishes-list":"../../components/dishes-list/dishes-list"
   }
 }

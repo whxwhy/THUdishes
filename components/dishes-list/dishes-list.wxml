@@ -9,7 +9,7 @@
      <view class="dish_info">
         <view class="dish_name">{{ item.name }}</view>
         <view class="dish_detail">
-          <view class="dish_grade">5.0</view>
+          <view class="dish_loc">{{item.canteen}}—{{item.window}}窗口</view>
           <view class="dish_price">{{ item.price }}元</view>
         </view>
         

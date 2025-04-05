@@ -3,8 +3,9 @@
     <navigator url="/pages/details/details?id={{item._id}}">
     <view class="content">
      <view class="dish_img" >
-        <image mode="aspectFill" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.QlHP61ITK5JVFtK6958uQwHaFk?rs=1&pid=ImgDetMain">
-        </image>
+     <image mode="aspectFill" class="dish_img_img" wx:if="{{dishData.pic}}"src="{{dishData.pic}}"></image>
+      <view wx:else class="errpic"><image mode="aspectFill"   src="/images/icons8-broken-image-96.png"></image><text style="color: #666666;">sorry,</text><text style="color: #666666;">暂无图片哦...</text></view>
+        
      </view>
      <view class="dish_info">
         <view class="dish_name">{{ item.name }}</view>

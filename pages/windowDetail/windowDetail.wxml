@@ -14,12 +14,12 @@
 <image mode="aspectFill" src="https://img.icons8.com/?size=100&id=86478&format=png&color=000000">
 <navigator></navigator>
 </image>
-<text>{{windowData.loc}}</text>
+<text>{{windowData.canteen}}—{{windowData.loc}}</text>
 </view>
 
 </view>
  
-  <view class="window_pic"><image mode="aspectFill"  src="https://ts1.cn.mm.bing.net/th/id/R-C.cd61493058af6809dc223d0cba1e2a00?rik=D45wpcUgqfy%2fMw&riu=http%3a%2f%2fwww.gzttxps.com%2fuploads%2fallimg%2f190321%2f1-1Z321094543538.jpg&ehk=YcC%2bwSETkyMGLEA%2fEEoJdUtMpMi4ekWzlliC8pv7LJY%3d&risl=&pid=ImgRaw&r=0">
-        </image></view>
+  <view class="window_pic"><image mode="aspectFill"  wx:if="{{windowData.pic}}"src="{{windowData.pic}}"></image>
+  <view wx:else class="errpic"><image mode="aspectFill"   src="/images/icons8-broken-image-96.png"></image><text style="color: #666666;">sorry, 暂无图片哦......</text></view></view>
 </view>
 <scroll-view scroll-y class="dishes"><dishes-list dishData="{{dishData}}"></dishes-list></scroll-view>

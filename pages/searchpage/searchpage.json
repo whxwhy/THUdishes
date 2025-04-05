@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "dishes-list":"../../components/dishes-list/dishes-list"
+  }
 }

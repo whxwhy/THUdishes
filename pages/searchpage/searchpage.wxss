@@ -1,4 +1,7 @@
 /* pages/searchpage/searchpage.wxss */
+page{
+  background-color: rgb(243,237,250);
+}
 .search1{
   height: 90rpx;
   padding:10rpx;
@@ -10,7 +13,7 @@
   height: 70rpx;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   background-color: #fff;
   color: #666666;
 }
@@ -18,4 +21,24 @@
   height: 15px;
   width: 15px;
   margin-right: 5px;
+  margin-left: 25px;
+}
+.result{
+  position: absolute;
+  top: 90rpx;bottom:0px;
+}
+.err{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.err image{
+  margin-top: 40%;
+  height: 50px;
+  width: 50px;
+}
+.errtext{
+  color: #666666;
+  padding-top: 5px;
 }

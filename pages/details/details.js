@@ -5,15 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+ dishData:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
-  },
+    console.log(options.id);
+    wx.cloud.database().collection("dishData")
+    .doc(options.id)
+    .get()
+    .then((res) => {
+      console.log('success=dish',res);
+      this.setData({
+         dishData:res.data,
+     });
+  })},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

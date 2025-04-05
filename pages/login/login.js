@@ -1,13 +1,25 @@
-// pages/user/user.js
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    avatar:"",
+    nickname:"",
   },
- 
+  getAvatar(e){
+    console.log(e);
+    this.setData({
+      avatar:e.detail.avatarUrl
+    })
+  },
+  getName(e){
+    console.log(e);
+    this.setData({
+      nickname:e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

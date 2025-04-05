@@ -1,0 +1,8 @@
+/* pages/login/login.wxss */
+.login{
+  margin-top:40rpx;
+  border-radius: 20rpx;
+  width:70%;
+  color:white;
+  background-color:rgb(154,107,203) ;
+}

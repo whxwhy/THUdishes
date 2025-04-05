@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<button wx:if="{{!avatar}}" class="login" open-type="chooseAvatar" bindchooseavatar="getAvatar">登录</button>
+<image wx:else src="{{avatar}}"></image>
+<input wx:if="{{!nickname}}" type="nickname" class="nickname" bindinput="getName" />
+<view wx:else>{{nickname}}</view>

@@ -1,3 +1,17 @@
 <!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
-<view>there should be details</view>
+<view class="dish" >
+    <view class="content">
+     <view class="dish_img" >
+     <image mode="aspectFill" class="dish_img_img" wx:if="{{dishData.pic}}"src="{{dishData.pic}}"></image>
+      <view wx:else class="errpic"><image mode="aspectFill"   src="/images/icons8-broken-image-96.png"></image><text style="color: #666666;">sorry,</text><text style="color: #666666;">暂无图片哦...</text></view>
+        
+     </view>
+     <view class="dish_info">
+        <view class="dish_name">{{ dishData.name }}</view>
+        <view class="dish_detail">
+          <view class="dish_loc">{{dishData.canteen}}—{{dishData.window}}窗口</view>
+          <view class="dish_price">{{ dishData.price }}元</view>
+        </view>
+        
+     </view></view>   
+  </view>

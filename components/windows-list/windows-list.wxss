@@ -1,0 +1,76 @@
+/* components/windows-list/windows-list.wxss */
+.window{
+    background-color: white;
+    padding-bottom: 3px;
+    border-radius: 16px;
+    margin: 5px 0;
+    margin-right: 5px;
+
+}
+.window_info{
+  display: flex;
+ align-items: center;
+  padding-top: 10px;
+}
+.window_name{
+  font-size: 34rpx;
+  font-weight: normal;
+  color:black;
+ padding-left: 15px;
+ padding-right: 3px;
+}
+.window_type{
+  background-color:rgb(154,107,203);
+  color: white;
+  font-weight: 340;
+  font-size: 24rpx;
+  text-align: center;
+ line-height: 18px;
+  width:18px;
+  height:18px;
+  border-radius: 30%;
+  margin:0 2px;
+}
+.window_loc{
+color:#555555;
+font-size: 28rpx;
+margin-left: auto;
+padding-right: 10px;
+}
+.dish{
+  display:flex;
+  flex-direction: column; 
+  padding:  5px 10px  10px 10px;
+  flex-wrap: wrap;
+  height:105 px;
+}
+.dishitem{
+  height:33.33%;
+  min-width: 45%;
+  width:max-content+10px;
+  display: flex;
+  align-items: flex-end;
+  padding-right:10px;
+
+}
+.dot{
+  color:#660874;
+  font-size: 32rpx;
+  padding-right:3px;
+  font-weight: border;
+  float: left;
+}
+/**.scroll::-webkit-scrollbar {
+    width: 0;
+    height:0;
+    }
+    */
+.dishname{
+  padding-right:5px;
+}
+.price{
+  font-size: 20rpx;
+  color: #3e1844;
+  margin-left: auto;
+
+}

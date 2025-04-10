@@ -1,0 +1,22 @@
+ <!--pages/canteenDetail/canteenDetail.wxml-->
+ <view><search></search></view>
+<view class="intro">
+<image mode="aspectFill" src="{{canteenData.pic}}"></image>
+<view class="cat_name">{{canteenData.name}}</view>
+<view  class="cat_loc"><image mode="aspectFill" src="https://img.icons8.com/?size=100&id=86478&format=png&color=000000"><navigator></navigator></image>
+<text>{{canteenData.loc}}</text></view>
+
+</view>
+  <view class="cates">
+    <view  class="left">
+    <block wx:for="{{floorData}}" wx:key="index">
+    <block wx:if="{{index<=(canteenData.floor-2)}}">
+    <view  bindtap="clickFloorNav"  class="floor">{{item.text}}</view></block>
+    <block wx:if="{{index==(canteenData.floor-1)}}"> <view  bindtap="clickFloorNav"  class="floorend">{{item.text}}</view></block>
+    </block>
+    </view>
+    <scroll-view scroll-y  class="right">
+      <windows-list windowData="{{windowData}}"></windows-list>
+    </scroll-view>
+  </view>
+

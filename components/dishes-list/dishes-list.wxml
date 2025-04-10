@@ -1,0 +1,20 @@
+<view class="list">
+  <view class="dish" wx:for="{{dishData}}" wx:key="index">
+    <navigator url="/pages/details/details?id={{item._id}}">
+    <view class="content">
+     <view class="dish_img" >
+     <image mode="aspectFill" class="dish_img_img" wx:if="{{item.pic}}"src="{{item.pic}}"></image>
+      <view wx:else class="errpic"><image mode="aspectFill"   src="/images/icons8-broken-image-96.png"></image><text style="color: #666666;">sorry,</text><text style="color: #666666;">暂无图片哦...</text></view>
+        
+     </view>
+     <view class="dish_info">
+        <view class="dish_name">{{ item.name }}</view>
+        <view class="dish_detail">
+          <view class="dish_loc">{{item.canteen}}—{{item.window}}窗口</view>
+          <view class="dish_price">{{ item.price }}元</view>
+        </view>
+        
+     </view></view>
+    </navigator>    
+  </view>
+</view>

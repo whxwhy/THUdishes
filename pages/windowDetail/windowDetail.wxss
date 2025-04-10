@@ -1,0 +1,83 @@
+/* pages/windowDetail/windowDetail.wxss */
+page{
+  height:100%;
+  background-color: rgb(243,237,250);
+width:100%;
+}
+.intro{
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height:25%;  
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.window_intro{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.window_name{
+  font-size: 48rpx;
+  margin:20rpx;
+  padding-left: 5px;
+}
+.type_box{
+  display:flex;
+  margin-left:15px;
+}
+.window_type{
+  background-color:rgb(154,107,203);
+  color: white;
+  font-weight: 340;
+  font-size: 24rpx;
+  text-align: center;
+ line-height: 18px;
+  width:18px;
+  height:18px;
+  border-radius: 30%;
+  margin:0 2px;
+}
+.window_loc{
+  margin-left:15px;
+  margin-bottom: 10px;
+}
+.window_loc image{
+
+  width:20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.window_loc text{
+  color:#555555;
+  font-size: 28rpx;
+  margin-left: 2px;
+  padding-right: 10px;
+  }
+.window_pic{
+margin: 10rpx 20rpx;
+}
+.window_pic image{
+width:400rpx;
+height:300rpx;
+border-radius: 16px;
+}
+.errpic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.errpic image{
+  height:48px;
+  width:48px;
+}
+.dishes{
+  position: absolute;
+top:31.5%;
+bottom:0px;
+padding-top: 3px;
+}

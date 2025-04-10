@@ -1,0 +1,18 @@
+<view class="list">
+  <view class="window" wx:for="{{windowData}}" wx:key="index">
+    <navigator url="/pages/windowDetail/windowDetail?id={{item._id}}">     
+    <view class="window_info">
+        <view class="window_name">{{ item.name }}</view>
+        <view class="window_type" wx:if="{{item.type}}">{{ item.type }}</view>
+        <view class="window_loc">{{ item.loc }}</view>
+     </view>
+     <scroll-view scroll-x="true" class="scroll"><view  class="dish"><view class="dishitem"   wx:for="{{item.dishData}}" wx:key="index">
+     <view class="dot">|</view>
+     <view class="dishname">{{item.name}}</view>
+     <view class="price">{{item.price}}元</view>
+      </view></view></scroll-view>
+     
+    </navigator>    
+  </view>
+  
+</view>

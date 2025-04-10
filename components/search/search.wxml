@@ -1,0 +1,5 @@
+<!--components/search/search.wxml-->
+
+<view class="search"><navigator url="/pages/searchpage/searchpage"><view class="container"><image src="/images/icons8-search-30.png"></image><text>搜索</text></view></navigator></view>
+<view class="searchcontent"><view class="searchitem">
+</view></view>

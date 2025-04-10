@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page,view,text,swiper,swiper-item,image,navigator{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+page{
+  --themeColor:#660874;
+  font-size:28rpx;
+}
+
+.button-hover-class{
+  -webkit-transform:translate(2px,2px);
+  -moz-transform:translate(2px,2px);
+}
+
+.button-hover-class-shu{
+  -webkit-transform:translate(0px,2px);
+  -moz-transform:translate(0px,2px);
+}
+
+button::after{
+  border:none;
+}
+
+button{
+  border-radius:0px;
+  background-color:none;
+}

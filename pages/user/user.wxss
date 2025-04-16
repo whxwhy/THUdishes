@@ -1,1 +1,58 @@
 /* pages/user/user.wxss */
+.container {
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 30px; /* 增大信息行间距 */
+}
+
+.info-item text {
+  width: 80px;
+  margin-right: 15px; /* 增加标签与输入框间距 */
+  font-size: 16px; /* 增大字体大小 */
+  color: #333; /* 更改字体颜色 */
+}
+
+.info-item image {
+  width: 80px; 
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px; /* 头像与输入框间距 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+.info-item input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.picker {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px; /* 增大按钮内边距 */
+  background-color: #660874; /* 更换为和整体色调更搭的紫色系按钮颜色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.crop-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}

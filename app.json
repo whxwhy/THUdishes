@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/windowDetail/windowDetail",
     "pages/canteenDetail/canteenDetail",
@@ -7,7 +8,7 @@
     "pages/searchpage/searchpage",
     "pages/turntable/turntable",
     "pages/user/user",
-    "pages/login/login"
+    "pages/add_picture/add_picture"
   ],
   "window": {
     "backgroundTextStyle": "light",

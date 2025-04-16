@@ -1,8 +1,26 @@
 /* pages/login/login.wxss */
-.login{
-  margin-top:40rpx;
-  border-radius: 20rpx;
-  width:70%;
-  color:white;
-  background-color:rgb(154,107,203) ;
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #660874;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

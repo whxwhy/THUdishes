@@ -20,11 +20,58 @@ Page({
       nickname:e.detail.value
     })
   },
+
+  /**
+   * 登录按钮点击事件
+   */
+  login() {
+    const { avatar, nickname } = this.data;
+    // 表单验证
+    if (!avatar) {
+      wx.showToast({
+        title: '请选择头像',
+        icon: 'none'
+      });
+      return;
+    }
+    if (!nickname) {
+      wx.showToast({
+        title: '请输入昵称',
+        icon: 'none'
+      });
+      return;
+    }
+
+    // 保存用户信息到本地存储
+    wx.setStorageSync('userInfo', {
+      avatar,
+      nickname
+    });
+
+    // 登录成功提示
+    wx.showToast({
+      title: '登录成功',
+      icon:'success'
+    });
+
+    // 跳转到指定页面，这里假设跳转到首页
+    wx.switchTab({
+      url: '/pages/index/index'
+    });
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    // 检查用户是否已经登录
+    const userInfo = wx.getStorageSync('userInfo');
+    if (userInfo) {
+      // 如果已经登录，直接跳转到首页
+      wx.switchTab({
+        url: '/pages/index/index'
+      });
+    }
   },
 
   /**

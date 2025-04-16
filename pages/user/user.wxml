@@ -1,2 +1,31 @@
 <!--pages/user/user.wxml-->
-<navigator url="/pages/login/login">登录</navigator>
+<view class="container">
+  <!-- 头像部分 -->
+  <view class="info-item">
+    <view bindtap="chooseAvatar">
+      <image src="{{avatarUrl || 'https://picsum.photos/100/100'}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <!-- 昵称部分 -->
+  <view class="info-item">
+    <text>昵称</text>
+    <input type="text" placeholder="请输入昵称" bindinput="inputNickname" value="{{nickname}}"/>
+  </view>
+  <!-- 入学年份部分 -->
+  <view class="info-item">
+    <text>入学年份</text>
+    <input type="number" placeholder="请输入入学年份" bindinput="inputEnrollmentYear" value="{{enrollmentYear}}"/>
+  </view>
+  <!-- 学生类型选择部分 -->
+  <view class="info-item">
+    <text>学生类型</text>
+    <picker bindchange="bindStudentTypeChange" value="{{selectedStudentTypeIndex}}" range="{{studentTypeOptions}}">
+      <view class="picker">
+        {{selectedStudentType || '请选择学生类型'}}
+      </view>
+    </picker>
+  </view>
+
+  <!-- 保存按钮 -->
+  <button bindtap="saveUserInfo">保存信息</button>
+</view>

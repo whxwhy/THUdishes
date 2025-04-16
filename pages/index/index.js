@@ -63,6 +63,41 @@ Page({
             display:'ALWAYS',
             padding:6
         }},
+        {
+          id: 5,
+          longitude:116.3333520000001,  
+          latitude: 40.01032,
+          width: 30,
+          height: 30,
+          callout: {
+            content: "芝兰园",
+            display: 'ALWAYS',
+            padding: 6
+          }
+        },
+        {
+          id: 6,
+          longitude: 116.33190000000002, 
+          latitude:  40.01175099999998,
+          width: 30,
+          height: 30,
+          callout: {
+            content: "玉树园",
+            display: 'ALWAYS',
+            padding: 6
+          }
+        },
+        {
+          id: 7,
+          longitude: 116.32695050681627, 
+          latitude: 40.00837794569839,
+          width: 30,
+          height: 30,
+          callout: {
+            content: "丁香园",
+            display: 'ALWAYS',
+            padding: 6
+          }}  
     ]
   },
 

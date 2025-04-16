@@ -19,4 +19,8 @@
       <windows-list windowData="{{windowData}}"></windows-list>
     </scroll-view>
   </view>
+  <view bindtap="chooseImage"  class="add_image">
+  <navigator url="/pages/add_picture/add_picture?id={{canteenData._id}}">    
+  <image src="/images/icons8-plus-96.png" mode="aspectFit"></image></navigator>
+</view>
 

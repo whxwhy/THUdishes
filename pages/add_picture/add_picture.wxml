@@ -1,0 +1,8 @@
+<!--pages/add_picture/add_picture.wxml-->
+<view class="container">
+  <input type="text" placeholder="请输入菜品名称" bindinput="handleDishNameInput" />
+  <button bindtap="chooseImage">从相册添加图片</button>
+  <view wx:if="{{imagePath}}">
+    <image src="{{imagePath}}" mode="aspectFit"></image>
+  </view>
+</view>

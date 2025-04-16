@@ -1,0 +1,23 @@
+/* pages/add_picture/add_picture.wxss */
+.container {
+  position: relative; /* 为子元素的绝对定位提供参考 */
+  padding: 20px;
+}
+input {
+  position: absolute;
+  top: 10px; /* 距离顶部10px，可按需调整 */
+  left: 10px; /* 距离左侧10px，可按需调整 */
+  width: 200px; /* 设定合适宽度 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #660874;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px; 
+}

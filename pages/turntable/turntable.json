@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "首页",
+  "backgroundColor": "#ffffff",
+  "usingComponents": {
+     "zhuanpan": "../../components/zhuanpan/zhuanpan"
+  }
 }

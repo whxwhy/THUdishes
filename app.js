@@ -2,6 +2,7 @@
 // app.js
 App({
   onLaunch: function (ops) {
+    wx.cloud.init({env:"cloud1-6gskinu0075cf5ea"})
      //判断是否是从二维码进来
      this.globalData.scene = ops.scene;
      if (ops.scene == 1011 || ops.scene == 1012 || ops.scene == 1013) {

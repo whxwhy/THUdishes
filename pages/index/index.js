@@ -149,6 +149,7 @@ Page({
       });
     } else {
       console.log('未找到对应的元素');
+      return; // 如果没找到元素，直接结束函数，避免后续错误
     }
     wx.cloud.database().collection("canteenData")
     .where({name:element.callout.content})

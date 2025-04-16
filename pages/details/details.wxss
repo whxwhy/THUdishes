@@ -62,3 +62,15 @@ margin-left: 2px;
   float: right;
   margin-right:25rpx;
 }
+.dish_rating {
+  display: flex;
+  margin-top: 10rpx;
+}
+.star {
+  font-size: 30rpx;
+  margin-right: 5rpx;
+}
+.average-rating {
+  margin-top: 10rpx;
+  color: #666;
+}

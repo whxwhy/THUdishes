@@ -155,6 +155,7 @@ Component({
          var e = 1 / t, i = 360 / t, r = i - 90;
 
          for (var g = 0; g < t; g++) {
+            // 调整选项角度计算，使其更对称
             awardsConfig.awards[g].item2Deg = g * i + 90 - i / 2 + "deg";//当前下标 * 360/长度 + 90 - 360/长度/2
             awardsConfig.awards[g].afterDeg = r + "deg";
          }
@@ -261,8 +262,9 @@ Component({
             //转盘开始转动音乐
             that.data.musicflg ? that.data.fastJuedin ? mid.play() : start.play() : '';
 
-            //要转多少度deg
-            app.runDegs = app.runDegs || 0, app.runDegs = app.runDegs + (360 - app.runDegs % 360) + (2160 - r * (360 / awardsConfig.awards.length));
+            // 优化转动角度计算，使其更对称
+            app.runDegs = app.runDegs || 0;
+            app.runDegs = app.runDegs + (360 - app.runDegs % 360) + (2160 - r * (360 / awardsConfig.awards.length));
 
             var animation = wx.createAnimation({
                duration: that.data.fastJuedin ? that.data.slowTime : that.data.fastTime,

@@ -12,6 +12,19 @@
           <view class="dish_loc">{{dishData.canteen}}—{{dishData.window}}窗口</view>
           <view class="dish_price">{{ dishData.price }}元</view>
         </view>
-        
-     </view></view>   
-  </view>
+        <view class="dish_rating">
+          <block wx:for="{{5}}" wx:key="*this">
+            <view class="star" style="color: {{index < (userRating > 0 ? userRating : rating) ? 'yellow' : '#ccc'}}" bindtap="onStarClick" data-index="{{index}}">★</view>
+          </block>
+        </view>
+        <!-- 显示用户评分 -->
+        <view class="user-rating">
+          <text>我的评分: {{userRating}}</text>
+        </view>
+        <!-- 显示平均评分 -->
+        <view class="average-rating">
+          <text>平均评分: {{rating}}</text>
+        </view>
+     </view>
+    </view>   
+  </view>    

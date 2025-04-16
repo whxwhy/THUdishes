@@ -38,8 +38,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   z-index: 8;
 }
 
@@ -47,11 +47,11 @@
   position: absolute;
   left: 0px;
   top: 0;
-  width: 660rpx;
-  height: 328rpx;
+  width: 100%;
+  height: 50%;
   color: #e4370e;
   font-weight: bold;
-  transform-origin: 330rpx 330rpx;
+  transform-origin: 50% 100%;
   overflow: hidden;
 }
 
@@ -59,9 +59,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 330rpx;
-  height: 330rpx;
-  transform-origin: 330rpx 330rpx;
+  width: 50%;
+  height: 100%;
+  transform-origin: 100% 100%;
   opacity: 1;
 }
 
@@ -87,8 +87,8 @@
 .gb-wheel-icontent {
   position: relative;
   display: block;
-  padding-top: 50rpx;
+  padding-top: 5rpx;
   margin: 0 auto;
   text-align: center;
-  transform-origin: 50% 328rpx;
+  transform-origin: 50% calc(100% - 2rpx);
 }
